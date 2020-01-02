@@ -24,7 +24,7 @@ We utilize the following models to find the best one for our objective:
 
 The Linear Regression model has a MSE of 17,397.  
 The Decision Tree, with `min_sample_leaf` of 5, has a MSE of 3,297.  
-Lastly, the Random Forest, with `max_depth` of 'None', `min_sample_leaf` of 1, and `n_estimators` of 20, had the best (lowest) MSE of 2,011.  
+Lastly, the Random Forest, with `max_depth` of 'None', `min_sample_leaf` of 1, and `n_estimators` of 20, has the best(lowest) MSE of 2,011.  
 For future predictions, the Random Forest would be the best model to use as overfitting is reduced is this model as well.
 
 
