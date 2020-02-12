@@ -6,7 +6,7 @@ Hadi Fanaee-T at the University of Porto compiled this data into a CSV file, whi
 
 # Objective
 
-With this dataset, we will create a model to predict the total number of bikes people rented in a given hour. We will predict the cnt column using all of the other columns (if possible), except for casual and registered. These columns leak information from the future and may not be available with new data. We will drop the yr column as well, as new data will never have 2011 or 2012 as the year.
+With this dataset, we will create a model to predict the total number of bikes people rented in a given hour. We will predict the `cnt` column using all of the other columns (if possible), except for `casual` and `registered`. These columns leak information from the future and may not be available with new data. We will drop the `yr` column as well, as new data will never have 2011 or 2012 as the year.
 
 # Process
 
