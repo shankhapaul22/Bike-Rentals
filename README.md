@@ -32,7 +32,7 @@ We utilize the following models to find the best one for our objective:
 
 - Linear Regression, as a baseline model to see if the target and the features have a linear relationship.
 - Decision Tree, to capture non-linearity.
-- Random Forest with Grid Search, to reduce overfitting and more accurate predictions than Decision Tree with hyperparameter optimization.
+- Random Forest with Grid Search (hyperparameter optimization), to reduce overfitting and more accurate predictions than Decision Tree. 
 
 # Results
 
