@@ -18,7 +18,7 @@ We check the dataframe information and find there are no null values and all col
 - drop columns if majority of the column was missing since it would add no value to the machine learning process, or
 - drop rows if missing values are located randomly within the dataset and imputation is not possible.
 
-The `season`, `month`, `hr`, `holiday`, `weekday`, `workingday`, & `weather` columns represent categorical values therfore we change their type. The `temp`, `atemp`, `windspead` and `hum` columns contain continuous data and need to be analyzed differently than the categorical columns.
+The `season`, `month`, `hr`, `holiday`, `weekday`, `workingday`, & `weather` columns represent categorical values therefore we change their type. The `temp`, `atemp`, `windspead` and `hum` columns contain continuous data and need to be analyzed differently than the categorical columns.
 
 We utilize visualization and compared our findings to domain knowledge to verify the data. If there were to be any unusual or corrupt data, we would have had to analyze further and remove the invalid data to our best ability.
 
