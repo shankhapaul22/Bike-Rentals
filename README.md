@@ -2,7 +2,7 @@
 
 Many American cities have communal bike sharing stations where you can rent bicycles by the hour or day. Washington, D.C. is one of these cities. The District collects detailed data on the number of bicycles people rent by the hour and day.
 
-Hadi Fanaee-T at the University of Porto compiled this data into a CSV file, which we'll be working with in this project. The file contains 17380 rows, with each row representing the number of bike rentals for a single hour of a single day. It is included in the files as `bike_rental_hour.csv`.
+Hadi Fanaee-T at the University of Porto compiled this data into a CSV file, which we'll be working with in this project. The file contains 17,380 rows, with each row representing the number of bike rentals for a single hour of a single day. It is included in the files as `bike_rental_hour.csv`.
 
 # Objective
 
@@ -37,7 +37,9 @@ We utilize the following models to find the best one for our objective:
 # Results
 
 The Linear Regression model has MSE of 18,168. The histogram plot shows little similarity to target column.
+
 The Decision Tree, with `min_sample_leaf` of 10, has MSE of 5,883. As we increase min_samples_leaf, we decrease variance, however we also increase bias.  
+
 Lastly, the Random Forest, with `max_depth` of 'None', `min_sample_leaf` of 10, and `n_estimators` of 20, has the best(lowest) MSE of 5,043.  
 
 # Conclusion
