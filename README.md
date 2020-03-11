@@ -30,13 +30,13 @@ Since we will be training different models, we will be using MSE as our error me
 
 We utilize the following models to find the best one for our objective:
 
-- Linear Regression, as a baseline model to see if the target and the features have a linear relationship.
+- Poisson Regression, as a baseline model as`cnt` is count data.
 - Decision Tree, to capture non-linearity.
 - Random Forest with Grid Search (hyperparameter optimization), to reduce overfitting and more accurate predictions than Decision Tree. 
 
 # Results
 
-The Linear Regression model has MSE of 18,168. The histogram plot shows little similarity to target column.
+The Poisson Regression model has MSE of 10,640. 
 
 The Decision Tree, with `min_sample_leaf` of 10, has MSE of 5,883. As we increase min_samples_leaf, we decrease variance, however we also increase bias.  
 
@@ -46,8 +46,7 @@ Lastly, the Random Forest, with `max_depth` of 'None', `min_sample_leaf` of 10, 
 
 There is still room for implementing different methods to lower error:
 
-- creating additional features, such as combining humidity, temperature and wind speed.
 - utilizing XGBoosting which is another ensemble tree method that applies the principal of boosting.
-- applying Multiple correspondence analysis (MCA) with dummy columns and/or Principal Component Analysis (PCA) to reduce dimensionality.
+- applying Principal Component Analysis (PCA) to reduce dimensionality.
 
 It would be interesting to predict the `casual` and `registered` rentals instead of `cnt` and see how they differ. We could also use the date and predict rentals in a sequential manner using LSTM rather than each hour as independent.
